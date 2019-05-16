@@ -96,6 +96,12 @@ endif
 
 LOCAL_CFLAGS += -DLOG_TAG=\"hwcomposer\"
 
+LOCAL_CFLAGS += -Wno-format
+LOCAL_CFLAGS += -Wno-format-extra-args
+LOCAL_CFLAGS += -Wno-gnu-designator
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../libhwcutils \
@@ -117,5 +123,10 @@ LOCAL_SRC_FILES := ExynosHWC.cpp
 
 LOCAL_MODULE := hwcomposer.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
-include $(BUILD_SHARED_LIBRARY)
 
+LOCAL_CFLAGS += -Wno-format-extra-args
+LOCAL_CFLAGS += -Wno-gnu-designator
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+
+include $(BUILD_SHARED_LIBRARY)

@@ -28,6 +28,11 @@ endif
 LOCAL_CFLAGS += -DUSES_VIRTUAL_DISPLAY
 LOCAL_CFLAGS += -DLOG_TAG=\"virtual\"
 
+LOCAL_CFLAGS += -Wno-format
+LOCAL_CFLAGS += -Wno-mismatched-tags
+LOCAL_CFLAGS += -Wno-sign-compare
+LOCAL_CFLAGS += -Wno-unused-parameter
+
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../libhwcutils \

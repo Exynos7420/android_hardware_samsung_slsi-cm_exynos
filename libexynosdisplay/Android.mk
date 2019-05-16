@@ -57,6 +57,12 @@ ifneq ($(filter exynos7420 exynos7580 exynos7870 exynos7880 exynos8890, $(TARGET
 endif
 
 LOCAL_CFLAGS += -DLOG_TAG=\"display\"
+
+LOCAL_CFLAGS += -Wno-format
+LOCAL_CFLAGS += -Wno-sign-compare
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../libhwc \
@@ -77,4 +83,3 @@ LOCAL_SRC_FILES := \
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libexynosdisplay
 include $(BUILD_SHARED_LIBRARY)
-

@@ -43,4 +43,6 @@ endif
 LOCAL_CFLAGS += -DUSE_ION
 LOCAL_SHARED_LIBRARIES += libion_exynos
 
+LOCAL_CFLAGS += -Wno-unused-parameter
+
 include $(BUILD_SHARED_LIBRARY)

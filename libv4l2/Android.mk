@@ -35,4 +35,8 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_MODULE := libexynosv4l2
 LOCAL_MODULE_TAGS := eng
 
+LOCAL_CFLAGS += -Wno-unused-function
+LOCAL_CFLAGS += -Wno-unused-parameter
+LOCAL_CFLAGS += -Wno-unused-variable
+
 include $(BUILD_SHARED_LIBRARY)

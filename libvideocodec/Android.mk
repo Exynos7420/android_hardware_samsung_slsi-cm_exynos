@@ -36,6 +36,11 @@ ifneq ($(filter exynos5422 exynos5430 exynos5433 exynos7420 exynos7580 exynos787
 LOCAL_CFLAGS += -DNEW_API
 endif
 
+LOCAL_CFLAGS += -Wno-unused-function
+LOCAL_CFLAGS += -Wno-unused-variable
+LOCAL_CFLAGS += -Wno-unused-label
+LOCAL_CFLAGS += -Wno-format
+
 LOCAL_MODULE := libExynosVideoApi
 LOCAL_MODULE_TAGS := optional
 LOCAL_ARM_MODE := arm

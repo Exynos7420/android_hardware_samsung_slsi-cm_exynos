@@ -610,7 +610,7 @@ bool ExynosG2DWrapper::InitSecureG2D()
             private_handle_t *handle = private_handle_t::dynamicCast(
                                               mVirtualDisplay->mPhysicallyLinearBuffer);
             mVirtualDisplay->mPhysicallyLinearBufferAddr = (unsigned long)ion_map(handle->fd, mAllocSize, 0);
-            ALOGV("allocated secure g2d input buffer: 0x%x", mVirtualDisplay->mPhysicallyLinearBufferAddr);
+            ALOGV("allocated secure g2d input buffer: 0x%lx", mVirtualDisplay->mPhysicallyLinearBufferAddr);
         }
     }
     return true;
@@ -623,7 +623,7 @@ bool ExynosG2DWrapper::TerminateSecureG2D()
         return false;
 
     if (mVirtualDisplay->mPhysicallyLinearBuffer) {
-        ALOGV("free g2d input buffer: 0x%x", mVirtualDisplay->mPhysicallyLinearBufferAddr);
+        ALOGV("free g2d input buffer: 0x%lx", mVirtualDisplay->mPhysicallyLinearBufferAddr);
         ion_unmap((void *)mVirtualDisplay->mPhysicallyLinearBufferAddr, mAllocSize);
         mVirtualDisplay->mPhysicallyLinearBufferAddr = 0;
 
