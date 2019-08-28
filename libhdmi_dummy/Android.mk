@@ -57,9 +57,6 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_SRC_FILES := \
 	ExynosExternalDisplay.cpp
 
-LOCAL_CFLAGS += -Wno-unused-parameter
-LOCAL_CFLAGS += -Wno-unused-function
-
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libhdmi
 include $(BUILD_SHARED_LIBRARY)

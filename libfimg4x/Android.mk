@@ -31,9 +31,6 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
-LOCAL_CFLAGS += -Wno-unused-variable
-LOCAL_CFLAGS += -Wno-mismatched-tags
-
 LOCAL_SHARED_LIBRARIES:= liblog libutils libbinder
 
 LOCAL_MODULE:= libfimg
