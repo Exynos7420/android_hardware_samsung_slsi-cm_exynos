@@ -50,6 +50,5 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_SRC_FILES := \
 	ExynosVirtualDisplay.cpp
 
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libvirtualdisplay
 include $(BUILD_SHARED_LIBRARY)

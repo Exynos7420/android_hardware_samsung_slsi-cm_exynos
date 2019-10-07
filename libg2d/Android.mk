@@ -26,6 +26,5 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_SRC_FILES := exynos_blender.cpp exynos_blender_obj.cpp libg2d.cpp
 
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libexynosg2d
 include $(BUILD_SHARED_LIBRARY)

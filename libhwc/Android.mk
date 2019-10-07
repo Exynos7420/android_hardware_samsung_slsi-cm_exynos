@@ -122,7 +122,6 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_SRC_FILES := ExynosHWC.cpp
 
 LOCAL_MODULE := hwcomposer.$(TARGET_BOARD_PLATFORM)
-LOCAL_MODULE_TAGS := optional
 
 LOCAL_CFLAGS += -Wno-format-extra-args
 LOCAL_CFLAGS += -Wno-gnu-designator

@@ -27,7 +27,6 @@ LOCAL_C_INCLUDES += \
 LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_SRC_FILES := MppFactory.cpp
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libmpp
 
 ifeq ($(TARGET_BOARD_PLATFORM),exynos5)

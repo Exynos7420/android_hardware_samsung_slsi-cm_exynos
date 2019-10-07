@@ -9,8 +9,6 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_MODULE := libsrpapi
 
-LOCAL_MODULE_TAGS := optional
-
 LOCAL_ARM_MODE := arm
 
 LOCAL_STATIC_LIBRARIES :=

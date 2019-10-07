@@ -98,7 +98,6 @@ ifeq ($(BOARD_USES_VIRTUAL_DISPLAY), true)
 	LOCAL_SRC_FILES += ExynosG2DWrapper.cpp
 endif
 
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libhwcutils
 
 LOCAL_CFLAGS += -Wno-format

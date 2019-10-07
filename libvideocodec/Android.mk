@@ -42,7 +42,6 @@ LOCAL_CFLAGS += -Wno-unused-label
 LOCAL_CFLAGS += -Wno-format
 
 LOCAL_MODULE := libExynosVideoApi
-LOCAL_MODULE_TAGS := optional
 LOCAL_ARM_MODE := arm
 
 include $(BUILD_STATIC_LIBRARY)
